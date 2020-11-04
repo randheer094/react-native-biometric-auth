@@ -20,7 +20,7 @@ public class ReactNativeBiometricsPackage implements ReactPackage {
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new ReactNativeBiometrics(reactContext));
+        modules.add(new ReactNativeBiometricAuth(reactContext));
 
         return modules;
     }
