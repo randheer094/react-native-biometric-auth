@@ -67,8 +67,6 @@ ReactNativeBiometrics.isSensorAvailable()
 
 Prompts the user for their fingerprint or face id. Returns a `Promise` that resolves if the user provides a valid biometrics or cancel the prompt, otherwise the promise rejects.
 
-**NOTE: This only validates a user's biometrics.  This should not be used to log a user in or authenticate with a server, instead use `createSignature`.  It should only be used to gate certain user actions within an app.
-
 __Options Object__
 
 | Parameter | Type | Description | iOS | Android |
