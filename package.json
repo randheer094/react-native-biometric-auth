@@ -1,5 +1,5 @@
 {
-  "name": "react-native-biometric-auth",
+  "name": "rn-biometric-auth",
   "version": "1.0.0",
   "summary": "A React Native library for biometric auth",
   "description": "React Native library biometric authentication.",
@@ -31,11 +31,8 @@
     "url": "git+https://github.com/randheercode/react-native-biometric-auth.git"
   },
   "private": false,
-  "author": {
-    "name": "Randheer Kumar Singh",
-    "url": "https://github.com/randheercode"
-  },
-  "license": "Apache License 2.0",
+  "author": "Randheer Kumar Singh (https://github.com/randheercode)",
+  "license": "Apache-2.0",
   "peerDependencies": {
     "react-native": ">=0.60.0"
   },
@@ -44,5 +41,6 @@
   },
   "devDependencies": {
     "typescript": "^3.7.2"
-  }
+  },
+  "dependencies": {}
 }
