@@ -94,9 +94,9 @@ public class ReactNativeBiometricAuth extends ReactContextBaseJavaModule {
 
                                 PromptInfo.Builder promptInfoBuilder = new PromptInfo.Builder().setTitle(promptMessage);
                                 if (deviceCredentialAllowed != null && deviceCredentialAllowed) {
-                                    promptInfoBuilder.setNegativeButtonText(cancelButtonText);
-                                } else {
                                     promptInfoBuilder.setDeviceCredentialAllowed(deviceCredentialAllowed);
+                                } else {
+                                    promptInfoBuilder.setNegativeButtonText(cancelButtonText);
                                 }
                                 PromptInfo promptInfo = promptInfoBuilder.build();
                                 biometricPrompt.authenticate(promptInfo);
