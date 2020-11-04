@@ -1,0 +1,46 @@
+{
+  "name": "rn-biometric-authentication",
+  "version": "1.0.0",
+  "summary": "A React Native library for biometric auth",
+  "description": "React Native library biometric authentication.",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "types": "build/esm/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf build && rm -rf node_modules && npm install",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc --target es5 --outDir build/cjs --module commonjs",
+    "build:esm": "tsc --target es5 --outDir build/esm --module esnext",
+    "release": "npm run clean && npm run build && npm publish"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "ios",
+    "biometrics",
+    "authentication",
+    "auth",
+    "fingerprint",
+    "touch-id",
+    "face-id"
+  ],
+  "homepage": "https://github.com/randheercode/react-native-biometric-auth",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randheercode/react-native-biometric-auth.git"
+  },
+  "private": false,
+  "author": "Randheer Kumar Singh (https://github.com/randheercode)",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react-native": ">=0.60.0"
+  },
+  "bugs": {
+    "url": "https://github.com/randheercode/react-native-biometric-auth/issues"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {}
+}
