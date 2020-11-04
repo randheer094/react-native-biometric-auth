@@ -55,9 +55,9 @@ RCT_EXPORT_METHOD(simplePrompt: (NSDictionary *)params resolver:(RCTPromiseResol
           @"error": @"User cancellation"
         };
         resolve(result);
-      } else {
-        NSString *message = [NSString stringWithFormat:@"%@", biometricError];
-        reject(@"biometric_error", message, nil);
+      } else {
+          NSString *message = [NSString stringWithFormat:@"%@", biometricError];
+          reject(@"biometric_error", message, nil);
       }
     }];
   });
