@@ -35,7 +35,7 @@
     "name": "Randheer Kumar Singh",
     "url": "https://github.com/randheercode"
   },
-  "license": "MIT",
+  "license": "Apache License 2.0",
   "peerDependencies": {
     "react-native": ">=0.60.0"
   },
